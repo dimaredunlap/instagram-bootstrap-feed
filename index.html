@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <script src="https://kit.fontawesome.com/a7ade8a0ab.js" crossorigin="anonymous"></script>
+    <title>BS Instagram Feed</title>
+</head>
+
+<body>
+    <!-- Top search bar -->
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="col">
+                <a class="navbar-brand bi bi-instagram" href="#">Instagram</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                </div>
+                <!-- Drop down -->
+                <div class="col-2">
+                    <div class="collapse navbar-collapse col" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item d-flex align-items-end">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">Create a new post</button>
+                                <div class="dropdown dropdown-left">
+                                    <button class="btn btn-light dropdobvcown-toggle" type="button" id="dropdownMenuButton1"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fas fa-cog"></i>
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- tab area for toggling view -->
+        <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
+                    role="tab" aria-controls="home" aria-selected="true"><i class="fa fa-square"
+                        aria-hidden="true"></i></button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
+                    role="tab" aria-controls="profile" aria-selected="false"><i class="fa fa-th"
+                        aria-hidden="true"></i></button>
+            </li>
+        </ul>
+        <!-- Tab pages home and profile -->
+        <div class="tab-content" id="myTabContent">
+            <!-- Home or Grid Page -->
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <div class="row">
+                    <img src="https://images.squarespace-cdn.com/content/v1/54e7a1a6e4b08db9da801ded/1bd563c1-7bbb-4b44-af21-a60408b6f129/44.png"
+                        class="img-thumbnail col-4" alt="...">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxkgl_v0j3pTfWX5FB6FzaLlpfwSvlWYJdRA&usqp=CAU"
+                        class="img-thumbnail col-4" alt="...">
+                    <img src="https://cdn.britannica.com/82/195482-050-2373E635/Amalfi-Italy.jpg"
+                        class="img-thumbnail col-4" alt="...">
+                </div>
+                <div class="row">
+                    <img src="https://vanillapapers.net/wp-content/uploads/2019/07/books-18.jpg"
+                        class="img-thumbnail col-4" alt="...">
+                    <img src="https://i0.wp.com/thenerdygourmet.com/wp-content/uploads/2021/04/acotar-covers-shot.jpg?fit=3024%2C3024&ssl=1"
+                        class="img-thumbnail col-4" alt="...">
+                    <img src="https://www.thespruce.com/thmb/UATeWQsNm3BeIJZFYZ01vOKeUxQ=/2981x2236/smart/filters:no_upscale()/humming-bird-perching-on-branch--costa-rica-974957308-7d85789fac2c4732a9ae37c327db69f2-4473604d8f03471cb317a2207f82de22.jpeg"
+                        class="img-thumbnail col-4" alt="...">
+                </div>
+                <div class="row">
+                    <img src="https://www.remax.eu/uploads/agent-1/Greece%20(Optimized)-5e580fa45d9f1.jpg"
+                        class="img-thumbnail col-4" alt="...">
+                    <img src="https://media.istockphoto.com/photos/view-from-the-calton-hill-on-princes-street-in-edinburgh-scotland-uk-picture-id1150506039?b=1&k=20&m=1150506039&s=170667a&w=0&h=FBMs2EHaUQjZAZE8S-rzm7K5dpYHn2bWZwx-c1cuL_4="
+                        class="img-thumbnail col-4" alt="...">
+                    <img src="https://media.cntraveler.com/photos/5a903dd660543c4ae96c2e74/16:9/w_2560%2Cc_limit/GettyImages-497268617.jpg"
+                        class="img-thumbnail col-4" alt="...">
+                </div>
+            </div>
+            <!-- Profile or feed page -->
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <!-- photo one -->
+                <div class="card mx-auto" style="width: 35rem;">
+                    <div class="card-header">
+                        My First Photo
+                    </div>
+                    <img src="https://images.squarespace-cdn.com/content/v1/54e7a1a6e4b08db9da801ded/1bd563c1-7bbb-4b44-af21-a60408b6f129/44.png"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p>28 likes</p>
+                        <p class="card-text">Got a new puppy!</p>
+                        <p class="card-text"><small class="text-muted bi bi-heart"> Comment..</small></p>
+                    </div>
+                </div>
+                <!-- photo two -->
+                <div class="card mx-auto" style="width: 35rem;">
+                    <div class="card-header">
+                        My Second Photo
+                    </div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxkgl_v0j3pTfWX5FB6FzaLlpfwSvlWYJdRA&usqp=CAU"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p>28 likes</p>
+                        <p class="card-text">Ice Cream for Dinner!</p>
+                        <p class="card-text"><small class="text-muted bi bi-heart"> Comment..</small></p>
+                    </div>
+                </div>
+                <!-- Photo three -->
+                <div class="card mx-auto" style="width: 35rem;">
+                    <div class="card-header">
+                        My Third Photo
+                    </div>
+                    <img src="https://cdn.britannica.com/82/195482-050-2373E635/Amalfi-Italy.jpg" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <p>28 likes</p>
+                        <p class="card-text">First Day in Italy!</p>
+                        <p class="card-text"><small class="text-muted bi bi-heart"> Comment..</small></p>
+                    </div>
+                </div>
+                <!-- Photo Four -->
+                <div class="card mx-auto" style="width: 35rem;">
+                    <div class="card-header">
+                        My Fourth Photo
+                    </div>
+                    <img src="https://vanillapapers.net/wp-content/uploads/2019/07/books-18.jpg" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <p>28 likes</p>
+                        <p class="card-text">Reading is my favorite hobby </p>
+                        <p class="card-text"><small class="text-muted bi bi-heart"> Comment..</small></p>
+                    </div>
+                </div>
+                <!-- photo five -->
+                <div class="card mx-auto" style="width: 35rem;">
+                    <div class="card-header">
+                        My Fifth Photo
+                    </div>
+                    <img src="https://i0.wp.com/thenerdygourmet.com/wp-content/uploads/2021/04/acotar-covers-shot.jpg?fit=3024%2C3024&ssl=1"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p>28 likes</p>
+                        <p class="card-text">New favorite book series! <strong>#Acotar</strong></p>
+                        <p class="card-text"><small class="text-muted bi bi-heart"> Comment..</small></p>
+                    </div>
+                </div>
+                <!-- photo six -->
+                <div class="card mx-auto" style="width: 35rem;">
+                    <div class="card-header">
+                        My Sixth Photo
+                    </div>
+                    <img src="https://www.thespruce.com/thmb/UATeWQsNm3BeIJZFYZ01vOKeUxQ=/2981x2236/smart/filters:no_upscale()/humming-bird-perching-on-branch--costa-rica-974957308-7d85789fac2c4732a9ae37c327db69f2-4473604d8f03471cb317a2207f82de22.jpeg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p>28 likes</p>
+                        <p class="card-text">Hummingbirds are my favorite type of bird :)</p>
+                        <p class="card-text"><small class="text-muted bi bi-heart"> Comment..</small></p>
+                    </div>
+                </div>
+                <!-- photo seven -->
+                <div class="card mx-auto" style="width: 35rem;">
+                    <div class="card-header">
+                        My Seventh Photo
+                    </div>
+                    <img src="https://www.remax.eu/uploads/agent-1/Greece%20(Optimized)-5e580fa45d9f1.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p>28 likes</p>
+                        <p class="card-text">First day in Greece!</p>
+                        <p class="card-text"><small class="text-muted bi bi-heart"> Comment..</small></p>
+                    </div>
+                </div>
+                <!-- photo eight -->
+                <div class="card mx-auto" style="width: 35rem;">
+                    <div class="card-header">
+                        My Eigth Photo
+                    </div>
+                    <img src="https://media.istockphoto.com/photos/view-from-the-calton-hill-on-princes-street-in-edinburgh-scotland-uk-picture-id1150506039?b=1&k=20&m=1150506039&s=170667a&w=0&h=FBMs2EHaUQjZAZE8S-rzm7K5dpYHn2bWZwx-c1cuL_4="
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p>28 likes</p>
+                        <p class="card-text">First day in Scotland!</p>
+                        <p class="card-text"><small class="text-muted bi bi-heart"> Comment..</small></p>
+                    </div>
+                </div>
+                <!-- photo nine -->
+                <div class="card mx-auto" style="width: 35rem;">
+                    <div class="card-header">
+                        My Ninth Photo
+                    </div>
+                    <img src="https://media.cntraveler.com/photos/5a903dd660543c4ae96c2e74/16:9/w_2560%2Cc_limit/GettyImages-497268617.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p>28 likes</p>
+                        <p class="card-text">First day in Rome!</p>
+                        <p class="card-text"><small class="text-muted bi bi-heart"> Comment..</small></p>
+                    </div>
+                </div>
+                <!-- end of photo feed -->
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+    crossorigin="anonymous"></script>
+
+</html>
